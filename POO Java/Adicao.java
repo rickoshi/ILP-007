@@ -17,6 +17,7 @@ public class Adicao {
       
       soma = num1 + num2;
       
-      System.out.printf("A soma e %d\n", soma);  
+      System.out.printf("A soma e %d\n", soma);
+      input.close();
    }
 }
