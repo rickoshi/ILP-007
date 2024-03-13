@@ -21,3 +21,39 @@ public class Adicao {
       input.close();
    }
 }
+
+/*
+Entrada de dados – Classe Scanner
+- Pertence ao pacote java.util
+- Cláusula import: aparecer antes da definição da classe
+import java.util.Scanner;
+*/
+
+/*
+Classe Scanner X objeto input (variável do tipo Scanner)
+*/
+
+/*
+Exemplo
+// declaração da variável input
+Scanner input;
+
+// instanciando objeto: alocado espaço na memória do computador
+input = new Scanner (System.in);
+
+// chamando métodos a partir do objeto input
+num1 = input.nextInt( );
+num2 = input.nextFloat( );
+num3 = input.nextDouble( );
+nome = input.nextLine( );
+
+Métodos públicos da classe Scanner chamados a partir do objeto input
+*/
+
+
+
+
+
+
+
+
