@@ -1,4 +1,5 @@
-//  Programa que imprime uma mensagem de boas vindas
+// BoasVindas.java
+// Programa que imprime uma mensagem de boas vindas
 
 // comentário em uma linha
 /* comentário
