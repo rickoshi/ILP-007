@@ -56,7 +56,6 @@ Precedência
 /*
 Formatação de reais
 A saída padrão de um valor float/double possuirá muitas casas decimais. Podemos utilizar a formatação para melhor o aspecto visual.
-
 O primeiro valor é o total de caracteres mínimo (parte inteira + vírgula + casas decimais)
 O segundo valor é o número de casas decimais 
 
