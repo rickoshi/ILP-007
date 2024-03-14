@@ -1,5 +1,6 @@
 // Adicao.java
 // Programa de adicao que exibe a soma de dois numeros.
+
 import java.util.Scanner;
 
 public class Exemplo02 {
