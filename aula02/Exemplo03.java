@@ -40,6 +40,7 @@ Caractere   char        2 bytes         0 e 65535
 Booleano    boolean     1 bit           false e true
 */
 
+
 /*
 Operadores aritméticos
 Adição          +
@@ -52,6 +53,7 @@ Precedência
 *, /, %
 +, -
 */
+
 
 /*
 Formatação de reais
