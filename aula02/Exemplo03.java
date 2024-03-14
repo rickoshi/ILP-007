@@ -4,7 +4,7 @@
 import java.util.Scanner;
 
 public class Exemplo03 {
-    public static void main(String args    []) {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         double num1;
         double num2;
@@ -57,7 +57,7 @@ Precedência
 Formatação de reais
 A saída padrão de um valor float/double possuirá muitas casas decimais. Podemos utilizar a formatação para melhor o aspecto visual.
 
-O primeiro valor é o total de caracteres (parte inteira + vírgula + casas decimais)
+O primeiro valor é o total de caracteres mínimo (parte inteira + vírgula + casas decimais)
 O segundo valor é o número de casas decimais 
 
 System.out.printf("A soma e %f\n", soma);
