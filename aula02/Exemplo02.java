@@ -2,7 +2,7 @@
 // Programa de adicao que exibe a soma de dois numeros.
 import java.util.Scanner;
 
-public class Adicao {
+public class Exemplo02 {
    public static void main(String args[]) {
       Scanner input = new Scanner(System.in);
       int num1;
@@ -18,7 +18,8 @@ public class Adicao {
       soma = num1 + num2;
       
       System.out.printf("A soma e %d\n", soma);
-      input.close();
+      input.close(); // Resource leak: 'input' is never closed 
+      // É importante fechar tudo que se abre, para isso, utiliza-se o método .close()
    }
 }
 
@@ -46,14 +47,5 @@ num1 = input.nextInt( );
 num2 = input.nextFloat( );
 num3 = input.nextDouble( );
 nome = input.nextLine( );
-
 Métodos públicos da classe Scanner chamados a partir do objeto input
 */
-
-
-
-
-
-
-
-
