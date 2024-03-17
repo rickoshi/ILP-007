@@ -24,5 +24,5 @@ Soluções
 Precedência garante o resultado do tipo double
     c = (f-32) * 5 / 9;
 Uso do ponto
-    c = (f-32) * (5.0 / 9);a
+    c = (f-32) * (5.0 / 9);
 */
