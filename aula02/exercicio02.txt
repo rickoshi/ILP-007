@@ -3,7 +3,6 @@ Atividade 2 – Ambiente Java
 Escolha apenas uma das opções abaixo.
 Para desenvolver aplicações Java, o que preciso instalar
 na minha máquina obrigatoriamente:
-
 ( ) IDE
 ( ) JVM
 (X) JDK
