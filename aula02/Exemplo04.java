@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class Exemplo04 {
     public static void main(String[]args) {
         Scanner input = new Scanner(System.in);
-        
         String frase; // Não é um tipo primitivo
 
         System.out.println("Digite uma frase:");
