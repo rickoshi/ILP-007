@@ -1,6 +1,8 @@
 // AdicaoVersao02.java
 // Programa de adição que exibe a soma de dois numeros reais.
 
+package aula02;
+
 import java.util.Scanner;
 
 public class Exemplo03 {
