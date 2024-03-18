@@ -1,21 +1,31 @@
+// MediaEncadeada.java
+// Faça um programa que leia as 2 notas de um aluno, calcule e exiba a média aritmética das notas e se o mesmo foi aprovado (M>=7),  reprovado (M < 4) ou está de recuperação (4<= M < 7). 
+// Possível solução (Encadeada)
+
 package aula03;
 
-// import java.util.Scanner;
+import java.util.Scanner;
 
 public class Exemplo01 {
-    public static void main(String[] args) {}
+    public static void main(String[] args) {
+        double n1, n2, media;
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Digite as duas notas: ");
+        n1 = entrada.nextDouble();
+        n2 = entrada.nextDouble();
+        media = (n1 + n2) / 2;
+
+        if (media >= 7)
+            System.out.println("Aprovado com nota " + media);
+        else if (media >= 4)
+                System.out.println("Recuperacao com nota " + media);
+            else
+                System.out.println("Reprovado com nota " + media);
+
+        entrada.close();
+    }
 }
-
-
-
-/* 
- * Aula 3
- * Operadores relacionais
- * Operadores lógicos
- * Estrutura de decisão
- * Estrutura de Repetição
- */
-
 
 /*
  * Operadores relacionais
