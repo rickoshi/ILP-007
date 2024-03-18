@@ -1,6 +1,8 @@
 // TiposDistintos.java
 // Programa que lê e exibe tipos distintos de variáveis
 
+package aula02;
+
 import java.util.Scanner;
 
 public class Exemplo05 {
