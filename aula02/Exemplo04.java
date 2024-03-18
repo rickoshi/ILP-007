@@ -1,6 +1,8 @@
 // LeituraString.java
 // Programa que lê e exibe cadeia de caracteres
 
+package aula02;
+
 import java.util.Scanner;
 
 public class Exemplo04 {
