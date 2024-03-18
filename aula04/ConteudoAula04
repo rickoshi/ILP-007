@@ -1,1 +1,9 @@
 a
+
+
+Para questões de segurança, os atributos da classe ficam privados e 
+
+
+Assim, os valores são modificados e validados nos métodos
+
+
