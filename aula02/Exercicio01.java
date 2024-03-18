@@ -2,6 +2,8 @@
 // Faça um programa em Java que leia uma temperatura em Fahrenheit, calcule e exiba seu valor em Celsius.
 // Fórmula: C = (F-32) * 5 / 9.
 
+package aula02;
+
 import java.util.Scanner;
 
 public class Exercicio01 {
