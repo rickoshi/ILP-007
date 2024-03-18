@@ -7,6 +7,8 @@
    linhas
         */
 
+package aula02;
+
 public class Exemplo01 {
    public static void main(String args[]) // método principal da aplicação Java
    {
