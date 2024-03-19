@@ -1,3 +1,5 @@
+package aula04;
+
 public class Circulo {
 
    private double raio;
