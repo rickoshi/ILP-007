@@ -1,10 +1,9 @@
 Atividade 03 – Classe String
 Pesquise e apresente 3 métodos da classe String exemplificando seu uso.
-
-Method              Description                                                     Return Type
-toUpperCase()	    Converte uma string para letras maiúsculas                      String
-length()	        Retorna o comprimento de uma string especificada	            int
-startsWith()	    Verifica se uma string começa com os caracteres especificados	boolean
+Method              Description                                                         Return Type
+toUpperCase()	    Converte uma string para letras maiúsculas                          String
+length()	        Retorna o comprimento de uma string especificada	                int
+startsWith()	    Verifica se uma string começa com os caracteres especificados	    boolean
 
 toUpperCase()
 String txt = "Hello World";
