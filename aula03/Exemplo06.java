@@ -49,5 +49,22 @@ public class Exemplo06
  *      break;
  *  default: comando;
  * }
+ */
+
+/*
+ * Caracteres x Strings
+ * Variáveis tipo char são para um único caractere. Use aspas simples:
+ * char sexo = ‘f’;
+ * char tam = ‘P’;
+ * Não pode ser usado para cadeia de caracteres.
+ * // char sexo = ‘feminino’;
+ * // char tam = ‘PP’;
  * 
+ * String pode tratar vários caracteres. Use aspas duplas:
+ * String sexo = “feminino”;
+ * String tam = “PP”;
+ * String não é um tipo primitivo.
+ * Variáveis do tipo String são objetos:
+ * - Possuem atributos (valor armazenado)
+ * - Possuem métodos (funcionalidades);
  */
