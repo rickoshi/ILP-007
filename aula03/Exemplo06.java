@@ -18,9 +18,10 @@ public class Exemplo06
         double x = iNum.nextDouble();
         String s = iStr.nextLine();
         double y = iNum.nextDouble();
+        // Por possuir entradas seguidas, o user precisa utilizar a expressão adequadamente.
 
         char op = s.charAt(0); // Converte o operador de String para caracter
-        switch (op) 
+        switch (op)
         {
             case '+': System.out.println("Valor = " + (x+y)); break;
             case '-': System.out.println("Valor = " + (x-y)); break;
