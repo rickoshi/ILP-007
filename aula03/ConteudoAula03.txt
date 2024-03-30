@@ -1,0 +1,17 @@
+Conteúdo da Aula 03
+
+Operadores relacionais
+Operadores lógicos
+Operadores Incremento e Decremento
+Caracteres x Strings
+
+Estrutura de decisão simples
+- Condicional aninhada (if-if-else)
+- Condicional encadeada (if-else if)
+- Operador condicional ternário (x>y ? x : y)
+- Estrutura de decisão múltipla (switch case)
+
+Estrutura de Repetição
+- Repetição com precondição (while)
+- Repetição com pós-condição (do-while)
+- Repetição com contador (for)
