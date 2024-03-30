@@ -1,0 +1,17 @@
+Conteúdo da Aula 02
+
+Estrutura de um Programa Java
+Compilar (javac) e Interpretar (java)
+Identificadores (classes e variáveis)
+
+Introdução a Java E/S
+- Linhas de comentário
+- Tipos primitivos do Java
+- Formatação de reais
+- Operadores aritméticos e precedência
+
+Entrada e Saída de Dados:
+– Entrada de dados: Classe Scanner
+- Entrada de dados de tipos distintos
+- Saída de dados: System.out.print() / System.out.printf
+- Sequência de escape: caracteres especiais
