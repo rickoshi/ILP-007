@@ -13,15 +13,14 @@ import java.util.Scanner;
 public class Exercicio06 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        double total = 0, soma  = 0;
+        double total = 0, soma = 0;
         // Uma variável para receber o input (A cada loop receberá um valor diferente) e uma variável para armazenar e somar com o valor anterior
 
         System.out.println("Digite os valores de cada item. Ao digitar \"0\", a entrada dos valores sera finalizada");
         do {
-            total += soma;
             soma = input.nextDouble();
-        }
-        while (soma != 0);
+            total += soma;
+        } while (soma != 0);
 
         /*
          * Tabela de desconto:
@@ -56,3 +55,33 @@ if (total < 50) {
         input.close();
     }
 }
+
+/*
+ * Por que se utiliza do-while e não while nesse programa?
+ * Para analisar uma condição, o compilador verifica se o valor satisfaz tal condição
+ * Ex: (soma != 0), é verificado se soma é diferente de 0
+ * Porém se a variável não for inicializada, o compilador declara erro de inicialização de variável (soma = //; // != 0;)
+ * Sendo necessário inicializar a variável, um valor a ela é atribuido. Geralmente 0 ou 1 (soma = 0; 0 != 0)
+ * Podemos utilizar 0, porém nossa condição é exatamente se a variável for 0. O programa será executado e terminado sem nenhuma entrada
+ * 
+ * Existem 2 soluções
+ * Usar outro valor para inicializar a variável "soma", como 1
+ * Se fizermos isso, a condição while se torna falsa e os comandos dentro dela são executados
+ * ENTRETANTO, a variável "soma" necessita ter seu valor alterado antes de calcular o total, a ordem segue:
+ * while (soma != 0)
+ *   {
+ *     soma = input.nextDouble();
+ *     total += soma;
+ *   }
+ * Como o "total" recebe os valores após a entrada, "total" já recebe o valor novo substituido. Porém há risco de os valores serem alterados, ou se usar o valor da inicialização
+ * 
+ * Uso do do-while
+ * Uma maneira mais conveniente e segura é utilizar a repetição com pós-condição
+ * A condição fica na parte após os comandos, então a variável "soma" pode mudar antes.
+ * Pode-se começar com o valor 0 e após o usuário digitar a entrada, o novo valor será substituido antes da condição ser analisada
+ * do
+ * {
+ *   soma = input.nextDouble();
+ *   total += soma;
+ * } while (soma != 0);
+ */
