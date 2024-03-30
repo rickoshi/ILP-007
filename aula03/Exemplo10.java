@@ -21,7 +21,7 @@ public class Exemplo10
 
         while (contador > 0) {
             fatorial = fatorial * contador;
-            contador--;
+            contador = contador - 1;
         }
         System.out.println("Fatorial: " + fatorial);
         input.close();
