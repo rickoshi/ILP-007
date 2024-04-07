@@ -1,3 +1,5 @@
+// Exemplo: Uso da classe círculo
+
 package aula04;
 
 public class Exercicio07_Teste {
