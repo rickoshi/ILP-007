@@ -1,4 +1,4 @@
-/* Atividade - Classe ContaCorrente
+/* Atividade - ContaCorrente
  * Atributos (variáveis de instância)
  * – Número da conta
  * – Titular
