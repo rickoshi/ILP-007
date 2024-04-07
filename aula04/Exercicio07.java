@@ -1,3 +1,18 @@
+/* Atividade: Classe Circulo
+ * Atributo (variáveis de instância)
+ * – Raio
+ * Métodos (tarefas)
+ * – Método construtor
+ * – Alterar/ informar raio
+ * – Calcular diâmetro
+ * – Calcular área
+ * – Calcular circunferência
+ * – Exibir Dados: informa diâmetro, área e circunferência.
+ * Obs.: Utilize a classe Math
+ * – Math.PI
+ * – Math.pow( )
+ */
+
 package aula04;
 
 public class Exercicio07 
@@ -48,6 +63,4 @@ public class Exercicio07
         System.out.printf("Area: " + calcularArea());
         System.out.printf("\n\n");
     }
-
-
 }
