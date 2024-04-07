@@ -8,6 +8,10 @@
  * – Depósito (atualizar saldo acrescido da quantia depositada);
  * – Saque (atualizar saldo decrescido da quantia sacada);
  * – Exibir dados da conta
+ * 
+ * Implemente a classe ContaCorrente
+ * – O valor inicial do saldo deve ser sempre maior ou igual a 0;
+ * – Não esqueça de validar os valores de saque e depósito (não devem ser menores que zero)
  */
 
 package aula04;
@@ -20,14 +24,29 @@ public class Exercicio08
     
     public Exercicio08(int conta, String titular, double saldo)
     {
+        if (conta < 0){
+            System.out.println("Numero de conta invalido!");
+        }
+        else {
         this.conta = conta;
-        this.titular = titular;
-        this.saldo = saldo;
+        }
+        
+        setTitular(titular);
+        
+        if (saldo < 0)
+        {
+            System.out.println("\nSaldo invalido!");
+            this.saldo = 0;
+        }
+        else
+        {
+            this.saldo = saldo;
+        }
     }
 
     public void deposito(double vlr)
     {
-        if (vlr <= 0)
+        if (vlr < 0)
         {
             System.out.println("\nValor de deposito invalido!");
         }
@@ -39,14 +58,17 @@ public class Exercicio08
 
     public void saque(double vlr)
     {
-        if (vlr > this.saldo)
+        if (vlr < 0){
+            System.out.println("\nValor inválido!");
+        }
+        else if (vlr > this.saldo)
         {
             System.out.println("\nSaldo insuficiente!");
         }
-        else
-        {
-            this.saldo = this.saldo - vlr;
-        }
+           else
+           {
+               this.saldo = this.saldo - vlr;
+           }
     }
 
     public int getConta() {
