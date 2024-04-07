@@ -1,6 +1,18 @@
+/* Atividade - Classe ContaCorrente
+ * Atributos (variáveis de instância)
+ * – Número da conta
+ * – Titular
+ * – Saldo
+ * Métodos (operações/ tarefas)
+ * – Construtor: inicializa titular, número da conta e saldo (sempre maior ou igual a zero);
+ * – Depósito (atualizar saldo acrescido da quantia depositada);
+ * – Saque (atualizar saldo decrescido da quantia sacada);
+ * – Exibir dados da conta
+ */
+
 package aula04;
 
-public class Exercicio08 
+public class Exercicio08
 {
     private int conta;
     private String titular;
@@ -17,7 +29,7 @@ public class Exercicio08
     {
         if (vlr <= 0)
         {
-            System.out.println("Valor de deposito invalido!");
+            System.out.println("\nValor de deposito invalido!");
         }
         else
         {
@@ -29,31 +41,13 @@ public class Exercicio08
     {
         if (vlr > this.saldo)
         {
-            System.out.println("Saldo insuficiente!");
+            System.out.println("\nSaldo insuficiente!");
         }
         else
         {
-            this.saldo = this.saldo - vlr
+            this.saldo = this.saldo - vlr;
         }
     }
-
-    public verDados()
-    {
-        System.out.println("Conta  : " + getConta());
-        System.out.println("Titular: " + getTitular());
-        System.out.println("Saldo  : " + getSaldo());
-    }
-
-
-
-
-
-
-
-
-
-
-
 
     public int getConta() {
         return conta;
@@ -66,15 +60,17 @@ public class Exercicio08
     public double getSaldo() {
         return saldo;
     }
+    
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
+    public void verDados()
+    {
+        System.out.printf("===============================\n");
+        System.out.printf("Conta  : %07d\n", getConta());
+        System.out.printf("Titular: %s\n", getTitular());
+        System.out.printf("Saldo  : R$%.2f\n", getSaldo());
+        System.out.printf("===============================\n");
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
