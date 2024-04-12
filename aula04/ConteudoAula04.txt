@@ -1,0 +1,18 @@
+Conteúdo aula 04
+
+Classes e Objetos
+- Composição de uma Classe
+- Exemplos de Classes e Objetos
+- Implementando uma Classe Java
+- Cuidados na criação de classes
+- Como usar/testar uma classe
+- Programas usando classes
+
+Métodos
+- Invocando métodos
+- Métodos Set e Get
+- Modificadores de acesso
+- Encapsulamento
+- Variáveis de instância x Variáveis locais
+- Construtores Java e palavra-chave new
+- Uso do this.
