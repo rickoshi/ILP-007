@@ -75,3 +75,26 @@ public class Exemplo02 {
         return dia + "/" + mes + "/" + ano;
     }
 }
+
+/*
+ * Pergunta importante
+ * Sobrecarga de métodos só funciona para método construtor?
+ * A sobrecarga de métodos não está limitada apenas a construtores. A sobrecarga de métodos permite que você defina vários métodos com o mesmo nome em uma classe, mas com diferentes listas de parâmetros. Isso permite que você use o mesmo nome de método para realizar operações semelhantes, mas com diferentes tipos de dados ou números de parâmetros.
+ * Embora a sobrecarga de métodos seja frequentemente associada à criação de múltiplos construtores em uma classe, ela pode ser usada em qualquer método dentro de uma classe. 
+ * 
+ * public class Sobrecarga
+ * {
+ *    public void metodo(int x) 
+ *    {
+         System.out.println("Método com um parâmetro inteiro: " + x);
+ *    }
+ *    public void metodo(String s) 
+ *    {
+ *       System.out.println("Método com uma string: " + s);
+ *    }
+ *    public void metodo(int x, String s)
+ *    {
+ *       System.out.println("Método com um parâmetro inteiro e uma string: " + x + ", " + s);
+ *    }
+ * }
+ */
