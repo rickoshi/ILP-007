@@ -81,7 +81,6 @@ public class Exercicio09 {
                 return 1;
             }
         }
-
     }
 
 /*
@@ -110,3 +109,24 @@ public class Exercicio09 {
         return dia + "/" + mes + "/" + ano;
     }
 }
+
+/*
+ * Forma alternativa de codificar
+ * private boolean bissexto(int anoTeste)
+ * {
+ *    if((anoTeste%4==0 && anoTeste%100!=0) || (anoTeste%400==0))
+ *       return true;
+ *    return false;
+ * }
+ * 
+ * private int checkDia(int DiaTeste)
+ * {
+ *    int diaMes[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+ *    if(bissexto(ano))
+ *       diaMes[2] = 29;
+ *    if (diaTeste > 0 && diaTeste <= diaMes[mes])
+ *       return diaTeste;
+ *    System.out.println("Dia " + diaTeste + "invalido. Configurado dia = 1.");
+ *    return 1;
+ * }
+ */
