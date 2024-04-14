@@ -20,5 +20,6 @@ public class Exercicio08_Teste {
         System.out.printf("\n Valor de saque em c2: ");
         cc2.saque(entrada.nextDouble());
         cc2.verDados();
+        entrada.close();
     }
 }
