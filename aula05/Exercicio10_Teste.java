@@ -30,53 +30,52 @@ public class Exercicio10_Teste
 
 /*
  * Saída
-===============================
-Conta  : 1234567
-Titular: Alejandro
-Saldo  : R$1000,00
-Limite : R$200,00
-===============================
-===============================
-Conta  : 7654321
-Titular: Fernando
-Saldo  : R$2000,00
-Limite : R$1000,00
-===============================
-===============================
-Conta  : 1357246
-Titular: Roberto
-Saldo  : R$0,00
-Limite : R$0,00
-===============================
-===============================
-Conta  : 1234567
-Titular: Alejandro
-Saldo  : R$900,00
-Limite : R$200,00
-===============================
-
-Limite usado: R$100,00
-===============================
-Conta  : 1234567
-Titular: Alejandro
-Saldo  : R$0,00
-Limite : R$100,00
-===============================
-
-Limite usado: R$100,00
-===============================
-Conta  : 1234567
-Titular: Alejandro
-Saldo  : R$0,00
-Limite : R$0,00
-===============================
-
-Nao foi possivel realizar o saque por falta de recursos!
-===============================
-Conta  : 1234567
-Titular: Alejandro
-Saldo  : R$0,00
-Limite : R$0,00
-===============================
+ * ===============================
+ * Conta : 1234567
+ * Titular: Alejandro
+ * Saldo : R$1000,00
+ * Limite : R$200,00
+ * ===============================
+ * ===============================
+ * Conta : 7654321
+ * Titular: Fernando
+ * Saldo : R$2000,00
+ * Limite : R$1000,00
+ * ===============================
+ * ===============================
+ * Conta : 1357246
+ * Titular: Roberto
+ * Saldo : R$0,00
+ * Limite : R$0,00
+ * ===============================
+ * ===============================
+ * Conta : 1234567
+ * Titular: Alejandro
+ * Saldo : R$900,00
+ * Limite : R$200,00
+ * ===============================
+ * 
+ * Limite usado: R$100,00
+ * ===============================
+ * Conta : 1234567
+ * Titular: Alejandro
+ * Saldo : R$0,00
+ * Limite : R$100,00
+ * ===============================
+ * 
+ * Limite usado: R$100,00
+ * ===============================
+ * Conta : 1234567
+ * Titular: Alejandro
+ * Saldo : R$0,00
+ * Limite : R$0,00
+ * ===============================
+ * 
+ * Nao foi possivel realizar o saque por falta de recursos!
+ * ===============================
+ * Conta : 1234567
+ * Titular: Alejandro
+ * Saldo : R$0,00
+ * Limite : R$0,00
+ * ===============================
  */
-
