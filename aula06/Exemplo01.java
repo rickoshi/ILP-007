@@ -20,21 +20,21 @@ public class Exemplo01 {
 
         // Por ser criado sem nenhum valor, todos os valores dentro do vetor serão default
         // Int[] = 0; String[] = null; boolean[] = false; char[] = '\u0000';
-/*
- * Output
- * Tamanho do vetor a[]: 10
- * Indice    Valor
- *      0        0
- *      1        0
- *      2        0
- *      3        0
- *      4        0
- *      5        0
- *      6        0
- *      7        0
- *      8        0
- *      9        0
- */
+        /*
+         * Output
+         * Tamanho do vetor a[]: 10
+         * Indice    Valor
+         *      0        0
+         *      1        0
+         *      2        0
+         *      3        0
+         *      4        0
+         *      5        0
+         *      6        0
+         *      7        0
+         *      8        0
+         *      9        0
+         */
         }
     }
 }
