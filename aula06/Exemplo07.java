@@ -33,6 +33,8 @@ public class Exemplo07
          *      System.out.println();
          * }
          */
+    }
+}
 
 /*
  * O for-each pega as posições do vetor base (array[][]) e atribui os valores a uma variável de referência (int[] arrayLinha)
@@ -48,5 +50,3 @@ public class Exemplo07
  * Finalmente, o programa entra no último vetor e executa as instruções para todos os elementos
  * Após isso, a execução do laço for-each está completa
  */
-    }
-}
