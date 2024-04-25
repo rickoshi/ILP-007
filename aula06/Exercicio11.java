@@ -27,21 +27,27 @@ public class Exercicio11
         double[][] notas = new double[ALUNOS][PROVAS];
         Scanner entrada = new Scanner(System.in);
 
-        // Entrada de valores das notas
         for (lin = 0; lin < ALUNOS; lin++)
         {
+            // A cada loop, a variável media é reiniciada
             media = 0;
             System.out.printf("Digite as notas do aluno %d: ", lin+1);
-            for (col = 0; col < PROVAS-1; col++) 
+            for (col = 0; col < PROVAS-1; col++)
             {
+                // Entrada de valores das notas, que são colocados no array
                 notas[lin][col] = entrada.nextDouble();
+                // Cada valor é acrescentado na variável media (o laço repete 2 vezes, então 2 valores são acrescentados)
                 media += notas[lin][col];
             }
+            // A média é calculada utilizando o número de provas-1, visto que a última coluna do array irá guardar a média do aluno
             media /= PROVAS-1;
+            // Por ser reiniciada para 0 a cada loop, a variável media do aluno é armazenada no array na linha do aluno
             notas[lin][2] = media;
+            // Finalmente, a média de cada aluno é somada na variável para depois calcular a média da turma 
             mediaTurma += media;
         }
 
+        // Calculo da média dividindo a soma das médias dos alunos (realizado no loop for) por ALUNOS (5)
         mediaTurma /= ALUNOS;
 
         System.out.println();
@@ -50,12 +56,15 @@ public class Exercicio11
 
         for (lin = 0; lin < ALUNOS; lin++)
         {
+            // Por utilizar index=0, a lin + 1 indica o número do aluno, e não seu índice
             System.out.printf("\nAluno %d:", lin+1);
             for (col = 0; col < PROVAS-1; col++){
                 System.out.printf(" %2.2f |", notas[lin][col]);
             }
 
+            // A impressão da média do aluno utiliza o valor armazenado na coluna 2 do array
             System.out.printf(" Media do aluno %d: %2.2f", lin+1, notas[lin][2]);
+            // condições para verificar se a média do aluno é maior, menor ou igual a média da turma
             if (notas[lin][2] > mediaTurma)
                 System.out.print(" - Acima da media da turma");
             else if (notas[lin][2] < mediaTurma)
