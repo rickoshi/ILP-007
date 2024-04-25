@@ -1,0 +1,283 @@
+Conteúdo aula 06
+
+Arrays
+- Índices de arrays
+- Declarando e criando arrays
+- Erro comum de programação
+- Inicializando array com uma lista
+- for-each loop
+
+Constantes
+- Palavra 'final' antes do tipo
+- Cuidados com constantes
+
+Arrays Bidimensionais
+- Representação gráfica de matrizes
+- Demonstração do loop
+- for-each loop
+
+
+// Exemplo01
+/*
+ * O que são Arrays?
+ * Arrays ou vetores são objetos que contêm uma coleção de elementos do mesmo tipo
+ * Cada elemento pode ser acessado ou referenciado individualmente por um índice numérico
+ * Esse valor inteiro representa a posição do elemento dentro do vetor
+ * Elementos podem ser de tipo primitivo, objetos ou outros arrays
+ */
+
+/*
+ * Arrays
+ * Índice:
+ * – Número da posição entre colchetes.
+ * – Deve ser inteiro positivo ou expressão de inteiro.
+ * – Primeiro elemento tem o índice zero:
+ * a = 5;
+ * b = 6;
+ * c[ a + b ] += 2;
+ * Adiciona 2 ao elemento c[ 11 ].
+ */
+
+/*
+ * Cuidado com o tipo do índice
+ * Utilizar um valor de tipo long como um índice de array resulta em um erro de compilação.
+ * Um índice deve ser um valor int ou um valor de um tipo que possa ser convertido para int
+ * — byte, short ou char, mas não long.
+ */
+
+/*
+ * Declarando e criando arrays
+ * São criados dinamicamente com a palavra-chave new
+ * int c[] = new int[ 12 ];
+ * Equivalente a:
+ * int c[];  // declaração
+ * c = new int[ 12 ]; // criação 
+ * Também podemos criar arrays de objetos:
+ * String b[] = new String[ 100 ];
+ * // int c[] é equivalente a int[] c
+ */
+
+/*
+ * Erro comum de programação
+ * Especificar o número de elementos entre os colchetes da declaração
+ * Ex. int c[ 12 ];// Erro
+ * Múltiplas variáveis em única declaração:
+ * Ex.:
+ * int[] a, b, c; // 3 vetores (a, b, c)
+ * int a[], b, c; // Um vetor (a) e dois inteiros (b, c)
+ */
+
+
+
+// Exemplo02
+/*
+ * Definindo constantes
+ * Utilizando a palavra 'final' antes do tipo da constante
+ * - O valor da constante é imutável durante a execução do programa
+ * Também são chamadas
+ * – constantes identificadas
+ * – variáveis de leitura (read-only).
+ * Tornam programas mais legíveis
+ * – Ex.: constante TAM indica tamanho do vetor;
+ * - Geralmente declarada com letras maiúsculas
+ */
+
+/*
+ * Cuidados com constantes
+ * Atribuir um valor a uma constante depois de a variável ter sido inicializada é um erro de compilação.
+ * Tentar utilizar uma constante antes de ela ser inicializada é um erro de compilação
+ */
+
+
+
+// Exemplo03
+/*
+ * Inicializando array com uma lista
+ * Utiliza a lista inicializadora:
+ * – Itens entre chaves ({ }).
+ * – Itens em uma lista separada por vírgulas.
+ * int n[] = { 10, 20, 30, 40, 50 }
+ * – Cria um array de cinco elementos.
+ * – Indexa valores de 0, 1, 2, 3, 4.
+ * Não precisa da palavra-chave new.
+ */
+
+
+
+// Exemplo04
+/*
+ * for-each loop
+ * Usado exclusivamente para fazer loop através de elementos em arrays
+ * Sintaxe:
+ * for ( <tipo> <var> : <array> )
+ * 
+ * Cada elemento do array será atribuido a uma variavel espeficada no loop (<tipo> <var>)
+ * O tipo de variável precisa ser o mesmo dos elementos do vetor (int i = int diaDoMes[], String s = String meses[])
+ * As instruções serão executadas para cada item do vetor:
+ * O primeiro elemento (index = 0) será atribuido para a variável e o compilador executará as operações dentro do loop
+ * Após a execução das instruções, o compilador atribui o valor do próximo elemento do vetor para a variável
+ * 
+ * Não utiliza uma variável contadora e é mais legível
+ * Porém não realiza operações fora do vetor (Como imprimir os dias junto com os meses)
+ */
+
+
+
+// Exemplo05
+/*
+ * Arrays Bidimensionais
+ * Tabelas com linhas e colunas:
+ * – m linhas por n colunas
+ */
+
+/*
+ * Arrays de arrays
+ * Declarando um array bidimensional a[2 linhas][3 colunas]
+ * int a[][] = new int [2][3];
+ * 
+ * Declarando e inicializando um array bidimensional b[2][3]
+ * int b[][] = { { 1, 2 , 3 }, {4 , 5 , 6 } };
+ * 1, 2 e 3 inicializam b[0][0], b[0][1] e b[0][2].
+ * 4, 5 e 6 inicializam b[1][0], b[1][1] e b[1][2].
+ * 
+ * Comprimentos de linhas diferentes.
+ * int b[][] = { { 1, 2 }, { 3, 4, 5 } };
+ * A linha 0 contém elementos 1 e 2.
+ * A linha 1 contém elementos 3, 4 e 5.
+ */
+
+/*
+ * Representação gráfica de matrizes
+ * Matrizes em Java são criadas como um vetor de vetores
+ * O primeiro vetor é criado para referenciar outro vetor
+ * Ele possui como valor armazenado o endereço de memória do vetor que possui os valores
+ * O vetor referenciado contém os valores que podem ser usados (int, String)
+ * 
+ * Ex: Se imprimirmos apenas o primeiro índice do vetor da matriz, recebemos o endereço do vetor referência
+ * int a[][] = new int[2][3];
+        System.out.println(a[1]);
+ * // Output
+ * [[I@372f7a8d
+ * 
+ * int b[][] = { { 1, 2 , 3 }, {4 , 5 , 6 } };
+        System.out.println(b[1]);
+ * // Output
+ * [I@2f92e0f4
+ * 
+ * Para referenciarmos os valores da matriz, ao invés dos endereços de cada vetor que a compõe, especificamos dois valores do vetor
+ * O primeiro valor referencia a linha: qual vetor que será escolhido
+ * O segundo valor referencia a coluna: qual valor dentro do vetor será apontado
+ * 
+ * Podemos definir graficamente a matriz int b[][] como:
+ *               i=0    i=1   i=2
+ *   Array 0  {   1  ,   2  ,  3  }, // Essa é uma array, ela armazena 3 valores
+ *   Array 1  {   4  ,   5  ,  6  }; // Essa é outra array, que também armazena 3 valores
+ * 
+ * Quando combinamos os valores que determinam o array selecionado (linha), e o índice (coluna),
+ * Referenciamos o valor escolhido na matriz:
+ *          [0]   [1]   [2]
+ *   [0]  {  1  ,  2  ,  3  },
+ *   [1]  {  4  ,  5  ,  6  };
+ * 
+ * b[0][1] = 2;
+ * b[1][2] = 6;
+ * 
+ * b = [[I@2f92e0f4
+ * b[1] = [I@2f92e0f4
+ */
+
+
+
+// Exemplo06
+/*
+ * Demonstração do loop
+ * int a1[][] = {{1, 2}, {3}, {4, 5, 6}};
+ * for (lin = 0; lin < v.length; lin++) 
+ *      for (col = 0; col < v[lin].length; col++)
+ *          System.out.printf("%d ", v[lin][col]);
+ * 
+ *                  i=0    i=1      i=2
+ *                   1      2        3
+ * v.length = 3; {{1 , 2}, {3}, {4 , 5 , 6}}
+ * 
+ *                   i=0 i=1
+ *                    1   2  
+ * v[0].length = 2; { 1 , 2 }
+ * 
+ *                  i=0
+ * v[1].length = 1; {3}
+ * 
+ *                   i=0 i=1 i=2
+ * v[2].length = 3; { 4 , 5 , 6 }
+ * 
+ * 
+ * lin = 0 < 3 (v.length); col = 0 < 2 (v[lin].length); col++; print();
+ * {{<1>, 2}, {3}, {4, 5, 6}}; 
+ * 1        v[0][0];
+ * 
+ * lin = 0 < 3 (v.length); col = 1 < 2 (v[lin].length); col++; print();
+ * {{1, <2>}, {3}, {4, 5, 6}}; 
+ * 1 2      v[0][1];
+ * 
+ * lin = 0 < 3 (v.length); col = 2 < 2 (v[0].length) == false; retorna ao for-externo com lin++;
+ * {{1, 2}, {3}, {4, 5, 6}};
+ * 1 2
+ * 
+ * lin = 1 < 3; col = 0 < 1 (v[1].length); col++; print();
+ * {{1, 2}, {<3>}, {4, 5, 6}};
+ * 1 2
+ * 3        v[1][0];
+ * 
+ * lin = 1 < 3; col = 1 < 1 (v[1].length) == false; retorna ao for-externo com lin++;
+ * {{1, 2}, {3}, {4, 5, 6}};
+ * 1 2
+ * 3
+ * 
+ * lin = 2 < 3; col = 0 < 3; col++; print();
+ * {{1, 2}, {3}, {<4>, 5, 6}};
+ * 1 2
+ * 3
+ * 4        v[2][0];
+ * 
+ * lin = 2 < 3; col = 1 < 3; col++; print();
+ * {{1, 2}, {3}, {4, <5>, 6}};
+ * 1 2
+ * 3
+ * 4 5      v[2][1];
+ * 
+ * lin = 2 < 3; col = 2 < 3; col++; print();
+ * {{1, 2}, {3}, {4, 5, <6>}};
+ * 1 2
+ * 3
+ * 4 5 6    v[2][2];
+ * 
+ * lin = 2 < 3; col = 3 < 3 == false; retorna ao for-externo com lin++;
+ * {{1, 2}, {3}, {4, 5, 6}};
+ * 1 2
+ * 3
+ * 4 5 6
+ * 
+ * lin = 3 < 3 == false; retorna ao método;
+ * {{1, 2}, {3}, {4, 5, 6}};
+ * 1 2
+ * 3
+ * 4 5 6
+ */
+
+
+
+// Exemplo07
+/*
+ * O for-each pega as posições do vetor base (array[][]) e atribui os valores a uma variável de referência (int[] arrayLinha)
+ * No for-each interno, o compilador atribuirá cada elemento do arrayLinha a outra variável (int numero)
+ * O primeiro for-each atribui os vetores (linhas) dentro do array, enquanto o segundo for-each atribui os elementos do vetor
+ * 
+ * As instruções serão executadas para cada item do vetor:
+ * Escolhido o primeiro vetor, o primeiro elemento desse vetor será atribuido a uma variável (int numero) e as operações do loop serão executadas
+ * Após a execução das instruções, o compilador atribui o valor do próximo elemento do vetor para a variável
+ * Executadas todas as instruções dos elementos do primeiro vetor, o compilador retorna para o for-externo
+ * E passa para o próximo elemento, que nesse caso, é outro vetor
+ * Dentro desse vetor (segunda linha da matriz), todos os elementos são executados e retorna-se ao for-externo
+ * Finalmente, o programa entra no último vetor e executa as instruções para todos os elementos
+ * Após isso, a execução do laço for-each está completa
+ */
