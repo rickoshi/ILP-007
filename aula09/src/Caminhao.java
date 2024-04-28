@@ -4,7 +4,7 @@ public class Caminhao extends Veiculo {
     private double capacidade;
     private int numEixos;
 
-    public Caminhao(String modelo, String placa, int anoFabr, double valor, double capacidade, int numEixos) {
+    public Caminhao(String modelo, String placa, int anoFabr, double capacidade, int numEixos, double valor) {
         super(modelo, placa, anoFabr, valor);
         setCapacidade(capacidade);
         setNumEixos(numEixos);
@@ -29,9 +29,9 @@ public class Caminhao extends Veiculo {
         return numEixos;
     }
 
-    public void imprimir() {
+    public void imprime() {
         System.out.printf("\nVeiculo: %s\nPlaca: %7s", modelo, placa);
-        System.out.printf("\nFabr: %4d\nCapacidade: %4d", anoFabr, capacidade);
+        System.out.printf("\nFabr: %4d\nCapacidade: %.1f toneladas", anoFabr, capacidade);
         System.out.printf("\n%02d Eixos\nR$ %.2f\n", numEixos, valor);
     }
 }
