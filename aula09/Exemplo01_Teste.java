@@ -11,5 +11,18 @@ public class Exemplo01_Teste {
         v.deprecia(10);
         System.out.println("Veiculo depreciado");
         v.imprime();
+
+        /*
+         * Veiculo: Fiesta
+         * Placa: ABC1678
+         * Ano: 2007
+         * Valor: R$34000,00
+         * Veiculo depreciado
+         * 
+         * Veiculo: Fiesta
+         * Placa: ABC1678
+         * Ano: 2007
+         * Valor: R$30600,00
+         */
     }
 }
