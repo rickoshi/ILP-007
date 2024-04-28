@@ -35,6 +35,6 @@ public class Exemplo05_CarroAlternativo extends Exemplo05_VeiculoAlternativo{
     public void imprime() {
         System.out.printf("\nVeiculo: %s\nPlaca: %7s", getModelo(), getPlaca());
         System.out.printf("\nFabr: %4d\nModelo: %4d", getAnoFabr(), anoModelo);
-        System.out.printf("\n%02d Portas\nR$ %.2f\n", numPortas, getAnoFabr());
+        System.out.printf("\n%02d Portas\nR$ %.2f\n", numPortas, getValor());
     }
 }
