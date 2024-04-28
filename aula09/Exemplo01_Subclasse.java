@@ -10,6 +10,7 @@ public class Exemplo01_Subclasse extends Exemplo01
     
     public Exemplo01_Subclasse(String modelo, String placa, int anoFabr, int anoModelo, int numPortas, double valor) 
     {
+        super(modelo, placa, anoFabr, valor); // Construtor super é necessário
         setModelo(modelo);
         setPlaca(placa);
         setAnoFabr(anoFabr);
