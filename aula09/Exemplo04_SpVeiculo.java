@@ -1,5 +1,6 @@
 // VeiculoProtected.java
 // Implementa uma superclasse Veiculo
+// Utiliza atributos protected, acessíveis para as subclasses
 
 package aula09;
 
