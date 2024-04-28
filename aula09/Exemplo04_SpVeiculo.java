@@ -68,3 +68,16 @@ public class Exemplo04_SpVeiculo
         modelo, placa, anoFabr, valor);
     }
 }
+
+/*
+ * Herança – Acesso aos membros
+ * Acesso public:
+ * – Subclasses acessam diretamente membros public de sua superclasse.
+ * Acesso private:
+ * – Subclasses não acessam diretamente atributos private da superclasse. Apenas por meio de métodos não-private.
+ * 
+ * Acesso protected:
+ * – Subclasses acessam diretamente membros protected de sua superclasse.
+ * – Pode ser usada a palavra-chave “super.”
+ * – Também são acessíveis a classes de um mesmo pacote (conjunto de classes)
+ */
