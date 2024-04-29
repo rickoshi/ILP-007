@@ -14,6 +14,7 @@ public class TesteVeiculo {
         carro = new Veiculo("Fiesta", "ABC1678", 2006, 31000);
         carro.imprime();
         carro.deprecia(10);
+        carro.imprime();
         System.out.println("Veiculo depreciado");
 
         Veiculo caminhao;
@@ -39,6 +40,11 @@ public class TesteVeiculo {
          * Placa: ABC1678
          * Ano: 2006
          * Valor: R$31000,00
+         * 
+         * Veiculo: Fiesta
+         * Placa: ABC1678
+         * Ano: 2006
+         * Valor: R$27900,00
          * Veiculo depreciado
          * 
          * Veiculo: Mercedes
