@@ -71,7 +71,6 @@ public class Frota
 
                 // A posição i do vetor receberá o endereço de memória contendo um objeto Caminhao com os atributos do Construtor
                 frota[i] = new Caminhao(modelo, placa, anoFabr, capacidade, numEixos, valor);
-                
             }
 
             // Se nenhum dos casos for executado, o objeto recebe os valores padrões do tipo Veiculo
