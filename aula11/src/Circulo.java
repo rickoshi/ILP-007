@@ -6,7 +6,7 @@ public class Circulo extends FormaGeometrica
 
     public void setRaio(double raio) {
         if (raio < 0) this.raio = 0;
-        else this.raio = 0;
+        else this.raio = raio;
     };
 
     public Circulo(double raio) {
