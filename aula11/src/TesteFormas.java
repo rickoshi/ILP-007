@@ -17,8 +17,8 @@ public class TesteFormas {
         /*
          * Dados do circulo:
          * Numero de lados: 0
-         * Area: 0,00
-         * Raio: 0.0
+         * Area: 78,54
+         * Raio: 5.0
          * 
          * Dados do retangulo:
          * Numero de lados: 4
