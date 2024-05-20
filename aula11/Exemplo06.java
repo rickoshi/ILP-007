@@ -11,7 +11,7 @@ public class Exemplo06 extends Exemplo05
 
     public void setRaio(double raio) {
         if (raio < 0) this.raio = 0;
-        else this.raio = 0;
+        else this.raio = raio;
     };
 
     public Exemplo06(double raio) {
