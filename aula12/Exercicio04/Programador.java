@@ -5,10 +5,9 @@ public class Programador extends Funcionario
     private String linguagem;
     private float salarioMensal;
 
-    public Programador(String nome, String mail, String linguagem, float salarioMensal) {
+    public Programador(String nome, String mail, String linguagem) {
         super(nome, mail);
         setLinguagem(linguagem);
-        setSalario(salarioMensal);
     }
 
     public void setLinguagem(String ling) {
@@ -30,6 +29,6 @@ public class Programador extends Funcionario
     public void exibeDados() {
         super.exibeDados();
         System.out.println("Linguagem: " + linguagem);
-        System.out.println("Salario: " + salarioMensal);
+        System.out.printf("Salario: R$%.2f\n", salarioMensal);
     }
 }
