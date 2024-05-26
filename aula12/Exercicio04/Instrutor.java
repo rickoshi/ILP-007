@@ -8,11 +8,9 @@ public class Instrutor extends Funcionario
     private Integer horasMensais;
     private float valorHoraAula;
 
-    public Instrutor(String nome, String mail, String disciplina, Integer horasMensais, float valorHoraAula) {
+    public Instrutor(String nome, String mail, String disciplina) {
         super(nome, mail);
         setDisciplina(disciplina);
-        setHorasMensais(horasMensais);
-        setValorHoraAula(valorHoraAula);
     }
 
     public void setDisciplina(String disc) {
@@ -39,6 +37,6 @@ public class Instrutor extends Funcionario
         super.exibeDados();
         System.out.println("Disciplina: " + disciplina);
         System.out.println("Horas mensais: " + horasMensais);
-        System.out.println("Valor da hora: " + valorHoraAula);
+        System.out.printf("Valor da hora: R$%.2f\n", valorHoraAula);
     }
 }
