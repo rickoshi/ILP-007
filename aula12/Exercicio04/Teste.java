@@ -38,10 +38,13 @@ public class Teste {
             if (tipoProfissional.equalsIgnoreCase("p")) {
                 System.out.println("Linguagem: ");
                 linguagem = sInput.nextLine();
+
                 System.out.println("Salario mensal: ");
                 salarioMensal = nInput.nextFloat();
 
-                arrayFuncionarios[i] = new Programador(nome, mail, linguagem, salarioMensal)   ;
+                Programador prog = new Programador(nome, mail, linguagem);
+                prog.setSalario(salarioMensal);
+                arrayFuncionarios[i] = prog;
             }
 
             else if (tipoProfissional.equalsIgnoreCase("i")) {
@@ -52,7 +55,10 @@ public class Teste {
                 System.out.println("Valor hora aula: ");
                 valorHoraAula = nInput.nextFloat();
 
-                arrayFuncionarios[i] = new Instrutor(nome, mail, disciplina, horasMensais, valorHoraAula);
+                Instrutor inst = new Instrutor(nome, mail, disciplina);
+                inst.setHorasMensais(horasMensais);
+                inst.setValorHoraAula(valorHoraAula);
+                arrayFuncionarios[i] = inst;
             }
         }
         System.out.println();
