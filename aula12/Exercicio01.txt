@@ -1,0 +1,11 @@
+1. Responda as seguintes questões quanto a modelagem de sistemas: 
+a. O que é Modelagem de Sistemas? Por que é importante? 
+Modelagem consciste no ato de criar modelos, fazendo uma Representação de algo do mundo real e simplificando a realidade. A Modelagem de sistemas consciste em representações do sistemas que desenvolvemos.
+Ela é importante por ajudar a compreender o sistema, sair do mundo das ideias e para algo “palpável”, perceber furos de entendimento antes de implementar e ter compreensão única do sistema (equipe e cliente);
+
+
+b. O que é UML? Cite pelo menos um exemplo de cada um dos seguintes tipos de diagrama: Estrutura, Comportamento e Interação da UML. 
+UML (Unified Modeling Language) é uma linguagem para a Visualização, Especificação, Construção e Documentação de artefatos de sistema de software (Requisitos do sistema, modelos, código de programa, componentes executáveis, arquitetura, etc.). Possui como foco a Modelagem O. O.
+Diagramas de Estrutura: Classes; Objetos; Componentes; Estrutura composta; Pacotes; Implantação;
+Diagramas de Comportamento: Casos de uso; Atividades; Máquina de Estados;
+Diagramas de Interação: Sequência; Comunicação; Tempo; Diagrama geral de interação
