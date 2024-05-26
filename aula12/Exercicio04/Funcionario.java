@@ -31,6 +31,6 @@ public abstract class Funcionario
     public void exibeDados() {
         System.out.println("Nome: " + nome);
         System.out.println("Mail: " + mail);
-        System.out.println("Pagamento: " + pagamento());
+        System.out.printf("Pagamento: R$%.2f\n", pagamento());
     }
 }
