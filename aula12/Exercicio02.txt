@@ -1,0 +1,17 @@
+2. Defina os seguintes conceitos:
+a. Sobrecarga
+Recurso que permite que vários métodos, com mesmo nome sejam definidos.
+Obrigatório diferentes parâmetros: quantidade, tipos e ordem dos argumentos.
+Pode ser usada para definir vários construtores ou sobrescrever outros métodos.
+
+b. Polimorfismo
+Princípio pelo várias classes derivadas de uma mesma superclasse podem invocar métodos que têm a mesma identificação (assinatura) mas comportamentos distintos.
+
+c. Herança
+Criar uma nova classe a partir de uma classe existente, absorvendo os dados e comportamentos da classe existente e aprimorando-a com novas capacidades.
+Adota um relacionamento hierárquico entre classes e permite melhor organização e reuso de código.
+
+d. Classe abstrata
+Classe demasiadamente geral para criar objetos reais. É Utilizada como superclasse para subclasses concretas.
+Declara atributos e comportamentos (métodos) comuns das várias classes em uma hierarquia.
+Contém um ou mais métodos abstratos. Utiliza palavra abstract para declarar uma classe abstrata ou um método abstrato.
