@@ -1,3 +1,4 @@
+// Caso 1 – Captura e Tratamento
 // TesteException.java
 // Exemplo do uso dos blocos try{}, catch(){} e finally{}
 // Exibe a mensagem "Erro aritmetico!" ou "Erro inesperado!" dependendo do tipo de exceção
