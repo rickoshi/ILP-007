@@ -19,7 +19,9 @@ public class Frota
 {
     public static void main(String[] args) 
     {
+        @SuppressWarnings("resource")
         Scanner sInput = new Scanner(System.in);
+        @SuppressWarnings("resource")
         Scanner nInput = new Scanner(System.in);
 
         int tam, i, anoFabr, anoModelo, numPortas, numEixos;
