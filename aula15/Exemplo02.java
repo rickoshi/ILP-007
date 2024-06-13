@@ -1,5 +1,5 @@
 // TesteShowMessage.java
-// Utiliza do container Caixa de Diálogo para mostrar uma mensagem
+// Utiliza do container Caixa de Diálogo para mostrar uma mensagem de diálogo
 
 package aula15;
 
@@ -12,6 +12,11 @@ public class Exemplo02 {
 //                                   Posição           Mensagem                  Título                Ícone
 // A "Posição" indica o parentComponent, o frame no qual o JOptionPane é mostrado, se for null, apresenta um frame default
 // O Ícone pode ser determinado por String (WARNING_MESSAGE) ou int (2)
+
+        JOptionPane.showMessageDialog(null, "Teste dialogo ERROR_MESSAGE", "Mensagem de erro", JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Teste dialogo INFORMATION_MESSAGE", "Mensagem informativa", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Teste dialogo WARNING_MESSAGE", "Mensagem de alerta", JOptionPane.WARNING_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Teste dialogo QUESTION_MESSAGE", "Mensagem de questionamento", JOptionPane.QUESTION_MESSAGE);
     }
 }
 
