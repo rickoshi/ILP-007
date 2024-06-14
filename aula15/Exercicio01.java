@@ -11,9 +11,10 @@ import javax.swing.JOptionPane;
 
 public class Exercicio01 {
     public static void main(String[] args) {
-        String num1 = JOptionPane.showInputDialog(null, "Numero 1", "Soma de dois inteiros", JOptionPane.PLAIN_MESSAGE);
-        String num2 = JOptionPane.showInputDialog(null, "Numero 2", "Soma de dois inteiros", JOptionPane.PLAIN_MESSAGE);
-
-        JOptionPane.showMessageDialog(null, "A soma dos dois numeros foi: " + (Integer.parseInt(num1) + Integer.parseInt(num2)), "Soma de dois inteiros", JOptionPane.INFORMATION_MESSAGE);
+        String input1 = JOptionPane.showInputDialog(null, "Numero 1", "Soma de dois inteiros", JOptionPane.PLAIN_MESSAGE);
+        String input2 = JOptionPane.showInputDialog(null, "Numero 2", "Soma de dois inteiros", JOptionPane.PLAIN_MESSAGE);
+        int num1 = Integer.parseInt(input1);
+        int num2 = Integer.parseInt(input2);
+        JOptionPane.showMessageDialog(null, "A soma dos dois numeros foi: " + (num1 + num2), "Soma de dois inteiros", JOptionPane.INFORMATION_MESSAGE);
     }
 }
